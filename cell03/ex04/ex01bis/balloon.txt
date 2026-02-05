@@ -2,18 +2,30 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ex00 - Change Background</title>
+    <title>ex01</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+        .blue {
+            background: blue;
+        }
+    </style>
 </head>
 
 <body>
 
-<button id="btn">Change Color</button>
+<div id="box"></div>
 
 <script>
-$("#btn").click(function () {
-    let color = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    $("body").css("background-color", color);
+$("#box").click(function () {
+    $(this).toggleClass("blue");
 });
 </script>
 
