@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+
+<table class="card">
+    <tr>
+        <td>
+            <h2>My Profile</h2>
+
+            <img class="profile" src="c:\Users\boont\OneDrive\Documents\0E998C47-26B6-4B1E-BC47-73868A78C7A2.jpg">
+
+
+            <h3>Nittha Boontham</h3>
+
+            <p>KMITL</p>
+
+            <div class="social">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png">
+            </div>
+
+            <button>Contact</button>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
