@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font: Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Kanit', sans-serif; background-color: #050505; color: white; }
+        .neon-hover:hover { 
+            box-shadow: 0 0 15px #FF0033; 
+            border-color: #FF0033; 
+        }
+    </style>
+</head>
+<body class="antialiased pt-20">
+
+    <!-- 1. Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-black/90 p-4 z-50 border-b border-gray-800 backdrop-blur-sm">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter">PORT<span class="text-[#FF0033]">FOLIO</span>.</a>
+            
+            <!-- ปุ่มเมนูมือถือ -->
+            <button onclick="document.getElementById('menu').classList.toggle('hidden')" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- เมนู -->
+            <ul id="menu" class="hidden md:flex w-full md:w-auto flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0 text-sm font-bold">
+                <li><a href="#about" class="hover:text-[#FF0033] transition">ABOUT</a></li>
+                <li><a href="#showcase" class="hover:text-[#FF0033] transition">SHOWCASE</a></li>
+                <li><a href="#contact" class="hover:text-[#FF0033] transition">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. About -->
+    <section id="about" class="py-20 container mx-auto px-4 min-h-screen flex items-center">
+        <div class="flex flex-col md:flex-row gap-10 items-center w-full">
+            <!-- กรอบรูป: ปรับโครงสร้างเล็กน้อยเพื่อให้จัดกึ่งกลางและเป็นวงกลม -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="w-80 h-80 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center neon-hover transition duration-300 overflow-hidden shadow-lg">
+                    <img src="c:\Users\boont\OneDrive\Documents\0E998C47-26B6-4B1E-BC47-73868A78C7A2.jpg" alt="Me" class="w-full h-full object-cover opacity-70 hover:opacity-100 transition">
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <h1 class="text-5xl md:text-6xl font-bold mb-8 uppercase">ABOUT <span class="text-[#FF0033]">ME</span></h1>
+                
+                <p class="text-gray-300 text-lg mb-6 leading-relaxed border-l-4 border-[#FF0033] pl-6">
+                    ชื่อ นิษฐา บุญธรรม ชื่อเล่น รอด ปัจจุบันกำลังศึกษาอยู่ชั้นปีที่ 2 ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะวิทยาศาสตร์ สาขาสถิติประยุกต์และการวิเคราะห์ข้อมูล
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Showcase -->
+    <section id="showcase" class="py-20 bg-[#0a0a0a]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">MY <span class="text-[#FF0033]">ACTIVITIES</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- ชิ้นที่ 1 -->
+                <div class="group relative overflow-hidden border border-gray-800 neon-hover transition cursor-pointer h-72">
+                    <img src="c:\Users\boont\OneDrive\Documents\1A94389A-DBB4-4E4A-BE47-FB464979B935.jpg">
+                    <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-3xl font-bold text-white mb-2 tracking-tighter">งานรับน้อง STAT</h3>
+                    </div>
+                </div>
+
+                <!-- ชิ้นที่ 2 -->
+                <div class="group relative overflow-hidden border border-gray-800 neon-hover transition cursor-pointer h-72">
+                    <img src="c:\Users\boont\OneDrive\Documents\A0F24974-4F97-4FED-87D4-424DEA35480B.jpg">
+                    <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-3xl font-bold text-white mb-2 tracking-tighter">งานแข่งกีฬา วิดยาวิดยา</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Contact (No Image Version) -->
+    <section id="contact" class="py-20 container mx-auto px-4">
+        <div class="bg-[#0f0f0f] border border-gray-800 shadow-2xl overflow-hidden max-w-2xl mx-auto rounded-sm">
+            
+            <div class="w-full p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold mb-2 uppercase">Contact <span class="text-[#FF0033]">Me</span></h2>
+                </div>
+                
+                <!-- Social Buttons -->
+                <div class="space-y-4">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1HCw8BYstS/?mibextid=wwXIfr" class="flex items-center p-4 border border-gray-700 bg-[#050505] hover:border-[#FF0033] hover:bg-[#1a1a1a] transition duration-300 group rounded-sm">
+                        <div class="w-12 h-12 bg-[#1877F2] rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition shadow-lg shrink-0">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#FF0033] transition">Facebook</h4>
+                        </div>
+                        <i class="fas fa-arrow-right ml-auto text-gray-600 group-hover:text-[#FF0033] transition transform group-hover:translate-x-1"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/sxlxpxo_xa?igsh=MXhmcHQ5cDdxa2Mxbg==" class="flex items-center p-4 border border-gray-700 bg-[#050505] hover:border-[#FF0033] hover:bg-[#1a1a1a] transition duration-300 group rounded-sm">
+                        <div class="w-12 h-12 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition shadow-lg shrink-0">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#FF0033] transition">Instagram</h4>
+                        </div>
+                        <i class="fas fa-arrow-right ml-auto text-gray-600 group-hover:text-[#FF0033] transition transform group-hover:translate-x-1"></i>
+                    </a>
+
+                    <!-- Line -->
+                    <a href="https://line.me/ti/p/8HJiThRgl_" class="flex items-center p-4 border border-gray-700 bg-[#050505] hover:border-[#FF0033] hover:bg-[#1a1a1a] transition duration-300 group rounded-sm">
+                        <div class="w-12 h-12 bg-[#06C755] rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition shadow-lg shrink-0">
+                            <i class="fab fa-line"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#FF0033] transition">Line</h4>
+                        </div>
+                        <i class="fas fa-arrow-right ml-auto text-gray-600 group-hover:text-[#FF0033] transition transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
