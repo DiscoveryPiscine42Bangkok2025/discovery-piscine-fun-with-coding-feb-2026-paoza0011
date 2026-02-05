@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        #ft_list {
+            width: 300px;
+            margin: 20px auto;
+            border: 2px solid black;
+            padding: 10px;
+            min-height: 200px;
+            background: white;
+        }
+
+        .todo {
+            background: rgb(222, 173, 230);
+            margin: 5px;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<button onclick="newTodo()">New</button>
+<div id="ft_list"></div>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
