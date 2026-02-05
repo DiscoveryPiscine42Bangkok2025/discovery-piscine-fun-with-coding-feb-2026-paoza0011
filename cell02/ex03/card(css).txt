@@ -1,0 +1,41 @@
+body {
+    background-color: #4b434e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-collapse: collapse;
+    background: rgb(171, 92, 227);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px gray;
+}
+
+.profile {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+}
+
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d21919;
+    color: white;
+    cursor: pointer;
+}
