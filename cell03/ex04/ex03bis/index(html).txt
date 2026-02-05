@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex03</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS ของเรา -->
+    <script src="todo.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #new {
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .todo {
+            background: lightgray;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Todo List</h1>
+<button id="new">New</button>
+
+<div id="ft_list"></div>
+
+</body>
+</html>
