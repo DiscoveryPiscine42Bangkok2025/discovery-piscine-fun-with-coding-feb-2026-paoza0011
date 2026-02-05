@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchi's Portfolio</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --accent-blue: #00a8ff;
+            --silver: #e1e8ed;
+            --white: #ffffff;
+            --dark-bg: #050a14;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--silver);
+        }
+
+        /* --- NAVBAR --- */
+        nav {
+            background: rgba(5, 10, 20, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: white;
+            border: 2px solid var(--accent-blue);
+            padding: 5px 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: var(--silver);
+            margin-left: 35px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-blue);
+            text-shadow: 0 0 10px var(--accent-blue);
+        }
+
+        /* --- SECTION --- */
+        section {
+            padding: 100px 12%;
+        }
+
+        /* --- ABOUT --- */
+        #about {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+            background: linear-gradient(135deg, #050a14, #0a192f);
+        }
+
+        .about-image-container {
+            position: relative;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 450px;
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* กรอบตกแต่ง */
+        .image-box::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--accent-blue);
+            z-index: -1;
+        }
+
+        /* TEXT */
+        .about-text h2 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+        }
+
+        /* --- SHOWCASE --- */
+        #showcase {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .project-card {
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 10px 10px 0 var(--primary-blue);
+            transition: 0.4s;
+        }
+
+        .project-card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0 var(--primary-blue);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 15px;
+        }
+
+        /* --- CONTACT --- */
+        #contact {
+            text-align: center;
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        /* SOCIAL */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 35px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-blue);
+            text-shadow: 0 0 15px var(--accent-blue);
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Anchi's Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#showcase">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-image-container">
+            <div class="image-box">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h2>Profile</h2>
+            <p>
+                Name : Anchisa Tongthong<br>
+                Nickname : Mew<br>
+                Age : 19 Years<br>
+                Education : Statistic Science , KMITL<br>
+                Email : imeqyou@gmail.com<br>
+                Phone : 0960860786
+            </p>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase">
+        <h2 style="text-align:center; margin-bottom:50px;">Activities</h2>
+
+        <div class="showcase-grid">
+
+            <div class="project-card">
+                <img src="project.jpg" alt="Thai Smile Bus">
+                <div class="project-info">
+                    <h3>Thai Smile Bus Project</h3>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="staff.jpg" alt="Staff Stat">
+                <div class="project-info">
+                    <h3>รับน้อง Stat ปี 2568</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contacts</h2>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/imeqyou"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1C6v1VWDpX/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+            <a href="https://line.me/ti/p/frfgPm4iP6"><i class="fab fa-line"></i></a>
+            <a href="https://discord.com/users/febgirlscr"><i class="fab fa-discord"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        DESIGNED BY atongtho © 2026
+    </footer>
+
+</body>
+</html>
