@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax</title>
+    <link rel="stylesheet" href="parallax.css">
+</head>
+
+<body>
+
+<div class="parallax1">
+    <div class="text">Hi!!</div>
+</div>
+
+<div class="content">
+    <p>Black tab</p>
+</div>
+
+<div class="parallax2">
+    <div class="text">Goodbye See You</div>
+</div>
+
+</body>
+</html>
